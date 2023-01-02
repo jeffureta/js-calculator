@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --calculator-color: #333333;
+    --screen-color: #3bd16f;
+    --logo-color: #E42022;
+}
+
+@media (min-width: 600px) {
+
+    #main-container {
+        max-width: 100px;
+        max-height: 500px;
+        position: absolute;
+        top: 10%;
+    }
+
+}
+
+#main-container {
+    width: 60vw;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--calculator-color);
+}
+
+#logo-div h1 {
+    color: var(--logo-color);
+    font-size: 0.9rem;
+    text-align: end;
+}
+
+#screen-container {
+    background-color: var(--screen-color);
+    height: 20px;
+    padding-right: 2%;
+    margin: 2% 0;
+    text-align: end;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#clear-button {
+    margin-top: 0;
+    width: 100%;
+}
