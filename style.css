@@ -20,6 +20,7 @@ body {
     --calculator-color: #333333;
     --screen-color: #3bd16f;
     --logo-color: #E42022;
+    --clear-btn-color: #FFDB58;
 }
 
 @media (min-width: 600px) {
@@ -29,6 +30,10 @@ body {
         max-height: 500px;
         position: absolute;
         top: 10%;
+    }
+
+    #buttons-container {
+        margin-top: 5px;
     }
 
 }
